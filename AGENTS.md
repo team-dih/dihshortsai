@@ -28,3 +28,7 @@ for YouTube Shorts, Instagram Reels, and TikTok.
 - Maintain clean, modular, and reusable code.
 - Prioritize video quality, performance, and usability.
 - Avoid unnecessary complexity and overengineering.
+
+## UI/UX and Components
+- use shadcn or if necessary, https://shadcnstudio.com/components 
+- DO NOT USE any other component library or custom made ui.
