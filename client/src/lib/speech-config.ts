@@ -6,6 +6,7 @@ export const speechPresets = {
   pitch: ["x-low", "low", "medium", "high", "x-high"],
   volume: ["x-soft", "soft", "medium", "loud", "x-loud"],
 };
+
 export type SpeechSettings = Record<keyof typeof speechPresets, string>;
 export const defaultSpeechSettings: SpeechSettings = { rate: "medium", pitch: "medium", volume: "medium" };
 
@@ -33,4 +34,3 @@ export const voices = [
 export function validVoice(id: unknown): boolean {
   return voices.some((voice) => voice.id === id);
 }
-

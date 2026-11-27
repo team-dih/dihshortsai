@@ -1,4 +1,4 @@
-import { defaultSpeechSettings, maxSpeechCharacters, sameSpeechSettings, speechModel, validVoice, type SpeechSettings } from "../../../shared/speech";
+import { defaultSpeechSettings, maxSpeechCharacters, sameSpeechSettings, speechModel, validVoice, type SpeechSettings } from "./speech-config";
 import type { MessageAudioRef, VideoProject } from "../types/fake_text";
 import { runMediaTransaction } from "./media-store";
 

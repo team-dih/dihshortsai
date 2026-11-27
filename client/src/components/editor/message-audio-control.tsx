@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { generateMessageAudio, messageAudioHint, readMessageAudio } from "@/lib/message-audio";
 import type { MessageAudioRef } from "@/types/fake_text";
 
-import type { SpeechSettings } from "../../../../shared/speech";
+import type { SpeechSettings } from "@/lib/speech-config";
 
 export function MessageAudioControl({ text, voiceId, settings, audio, onSave }: {
   settings?: SpeechSettings;

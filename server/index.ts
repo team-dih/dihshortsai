@@ -1,7 +1,7 @@
 ﻿import "dotenv/config";
 import cors from "cors";
 import express from "express";
-import { speechRouter } from "./speech.js";
+import { speechRouter } from "./speech.ts";
 
 const app = express();
 const port = Number(process.env.PORT) || 3001;

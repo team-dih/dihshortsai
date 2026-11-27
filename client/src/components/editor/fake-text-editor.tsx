@@ -23,7 +23,7 @@ import { Slider } from "@/components/ui/slider";
 import { Sortable, SortableItem, SortableItemHandle } from "@/components/ui/sortable";
 import { Textarea } from "@/components/ui/textarea";
 import type { BackgroundClip, VideoProject } from "@/types/fake_text";
-import { defaultSpeechSettings, speechPresets } from "../../../../shared/speech";
+import { defaultSpeechSettings, speechPresets } from "@/lib/speech-config";
 
 const sections = [
   {

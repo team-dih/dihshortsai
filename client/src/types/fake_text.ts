@@ -1,4 +1,4 @@
-import type { SpeechSettings } from "../../../shared/speech";
+import type { SpeechSettings } from "../lib/speech-config";
 
 interface Participant {
     displayName: string,

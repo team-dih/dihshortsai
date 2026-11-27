@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { defaultSpeechSettings, maxSpeechCharacters, sameSpeechSettings, speechModel, validSpeechSettings, validVoice } from "../shared/speech.js";
+import { defaultSpeechSettings, maxSpeechCharacters, sameSpeechSettings, speechModel, validSpeechSettings, validVoice } from "./speech-config.ts";
 
 export const speechRouter = Router();
 

@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { voices } from "../../../../shared/speech";
+import { voices } from "@/lib/speech-config";
 import { useState } from "react";
 
 export function VoiceSelector({ value, onChange }: { value: string; onChange: (id: string) => void }) {
