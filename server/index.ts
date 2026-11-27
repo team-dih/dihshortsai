@@ -230,8 +230,9 @@ app.use((request, response, next) => {
       bot: { known: report?.isBot ?? null, basedOnReportedUserAgent: true },
       authentication: { userId: null },
       response: {
-        status: response.statusCode,
-        durationMs: Math.round(performance.now() - startedAt),
+        measurement: "express_to_next_route",
+        upstreamStatus: response.statusCode,
+        upstreamDurationMs: Math.round(performance.now() - startedAt),
       },
       // No authentication context or internal user ID exists in this app yet.
     }));
