@@ -11,6 +11,12 @@ bun run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment
+
+Copy `client/.env.example` to `client/.env.local` for local development. The client uses `API_SERVER_ORIGIN` only to proxy `/api/speech` requests to the server; it defaults to `http://127.0.0.1:3001`.
+
+In Vercel, set `API_SERVER_ORIGIN` in the **client project's** Environment Variables to the deployed server's origin (for example, `https://your-api.vercel.app`). Do not put server secrets such as `SPEECHIFY_KEY` in the client project.
+
 You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

@@ -14,7 +14,9 @@ bun run index.ts
 
 ## Speechify
 
-Set `SPEECHIFY_KEY` in `server/.env`. Run `bun run dev` from both `server` and `client` during development. The editor proxies `POST /api/speech` to the Express server on port 3001. If Express runs elsewhere, set `API_SERVER_ORIGIN` in the client environment before starting or building Next.js.
+Copy `server/.env.example` to `server/.env` and set `SPEECHIFY_KEY` there. This secret belongs only to the server and should never be set in the client project. Run `bun run dev` from both `server` and `client` during development. The client proxies `POST /api/speech` to the Express server on port 3001; configure `API_SERVER_ORIGIN` separately in the client environment if the server runs elsewhere.
+
+In Vercel, set `SPEECHIFY_KEY` in the **server project's** Environment Variables. Set the client project's `API_SERVER_ORIGIN` separately to the deployed server's origin.
 
 The editor stores each generated WAV file in IndexedDB. A message's optional `audio` field contains its stable `assetId` and `durationSeconds`. Consumers can use `readMessageAudio(assetId)` to retrieve the local blob without requesting synthesis.
 
