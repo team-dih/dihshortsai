@@ -1,7 +1,7 @@
 import { expect, test, spyOn } from "bun:test";
 import express from "express";
 import { once } from "node:events";
-import { speechRouter } from "./speech";
+import { speechRouter } from "./speech.js";
 
 test("speech endpoint validates input, protects credentials and returns WAV bytes", async () => {
   const app = express().use(express.json()).use("/api/speech", speechRouter);
